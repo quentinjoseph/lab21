@@ -2,9 +2,8 @@ var express = require('express');
 var app = express();
 var imported = require('./facts.js')
 
-// var facts = ["i do not like mushrooms", "i do not like onions", "i do not like peppers", "i'm hungry", "yep yep", "this is completed", "this is a really long list", "i am tired", "too much to do","node node node"];
 
-
+app.use(express.static(__dirname + '/public'))
 
 app.get('/api/random-fact', function (req, res){
   res.send(imported.pullFact());

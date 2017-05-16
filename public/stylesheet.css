@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+/*font-family: 'Amatic SC', cursive;*/
+#fact{
+  font-size: 44px;
+  font-family: 'Amatic SC';
+}
+
+body{
+
+  background: url(images/sunset.jpeg) no-repeat center fixed;
+  background-size: cover;
+  /*background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+p{
+  text-align: center;
+}
+
+.btn{
+  width:10%;
+  margin:auto;
+  text-align: center;
+}
+button{
+  text-align: center;
+  width:70%;
+  margin:auto;
+}
