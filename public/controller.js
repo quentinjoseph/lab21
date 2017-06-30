@@ -2,8 +2,12 @@ var app = angular.module('qFacts');
 
 app.controller('foot', function($scope, service){
 $scope.fact=[];
+var clips =['owen1.wav','neverKnew.wav','owen2.wav','serious.wav','wow.wav'];
+
 $scope.playAudio = function() {
-     var audio = new Audio('neverKnew.wav');
+  var audioClip= clips[Math.floor(Math.random()*clips.length)];
+  console.log(audioClip);
+     var audio = new Audio(audioClip);
      audio.play();
  };
   console.log('hello');
